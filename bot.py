@@ -25,7 +25,7 @@ from telegram.ext import (
 )
 
 # 4. Загрузим и подготовим данные
-df = pd.read_excel('/content/таблица оценки.xlsx')
+df = pd.read_excel('таблица оценки.xlsx')
 df['Дата просмотра'] = pd.to_datetime(df['Дата просмотра'])
 first_date = df['Дата просмотра'].min()
 df['Дни от первой даты'] = (df['Дата просмотра'] - first_date).dt.days
