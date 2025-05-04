@@ -1,10 +1,3 @@
-# 1. Установим зависимости
-!pip install --quiet python-telegram-bot nest_asyncio pandas numpy scikit-learn openpyxl
-
-# 2. Разрешим вложенный event loop в Colab
-import nest_asyncio
-nest_asyncio.apply()
-
 # 3. Импорт необходимых библиотек
 import math
 import pandas as pd
