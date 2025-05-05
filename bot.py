@@ -198,7 +198,7 @@ async def text_handler(update: Update, context: ContextTypes.DEFAULT_TYPE):
     await update.message.reply_text("Нажмите кнопку для действия.", reply_markup=keyboard)
 
 # 7. Сборка и запуск бота
-BOT_TOKEN = "8152150712:AAETIoe9X7HQdYnc8fF4MlkK-XvQ8WI6KFg"
+BOT_TOKEN = "8152150712:AAHbtVMMjoh-3SyjPQTUVE8BYHYF0oBTioE"
 app = ApplicationBuilder().token(BOT_TOKEN).build()
 
 app.add_handler(CommandHandler("start", start))
